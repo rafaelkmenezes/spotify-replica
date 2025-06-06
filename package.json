@@ -2,5 +2,26 @@
   "dependencies": {
     "axios": "^1.9.0",
     "mongodb": "^6.16.0"
-  }
+  },
+  "name": "gabarito-da-aula-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end",
+    "start": "npm run start --prefix back-end"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelkmenezes/spotify-replica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rafaelkmenezes/spotify-replica/issues"
+  },
+  "homepage": "https://github.com/rafaelkmenezes/spotify-replica#readme"
 }
