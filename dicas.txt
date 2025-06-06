@@ -1,0 +1,75 @@
+Arrow Funcion
+  const função = () => {
+
+  instruções
+
+  }
+
+  Exemplo:
+  const App2 = () => {
+    
+      console.log("Olá, Mundo"); 
+      return <h1>Rafael</h1>;
+
+  }
+  Caso tenha apenas uma instrução:
+   const App2 = () => instrução;
+
+Nomeação de componente => PascalCase => Exemplo: Header. MainSection
+
+Nomeção de variável, função => camelCase =>Exemplo: item, itemList, corcundaDoCamelo
+
+Nomeação de classes em CSS => Metodologia BEM =>
+  Blocks => Exemplo: bloco. Quando for mais de uma palavra, usa kebab-case. Exemplo: bloco-item
+  Elements => Exemplo: bloco__elemento
+  Modifiers => bloco__elemento--modificador
+
+  Palavras compostas são separadas por hífen => item-list
+
+Export default => Posso importar com qualquer nome e sem chaves
+Export sem default => Só posso importar com o nome exportado e entre chaves
+
+Self closing tag => <Tag />
+
+padding, margin => os atributos são no sentido horário => acima, direita, abaixo, esquerda
+
+Em JSX, quando for estilizar em CSS, ao invés de usar class, usa className
+
+Para estilizar uma classe em CSS, usa-se o ponto. Para estilizar um id, usa-se hashtag
+
+Tag vazia em react <></> chama-se fragment
+
+Componentes recebem "props" (parâmetros, argumentos)
+
+Desestruturação => usado para pegar apenas o que quer do objeto e não o objeto todo.
+  Exemplo: const obj = {name: "Rafael", sobrenome: "Keller", time="São Paulo"} -> Objeto todo
+  const {time} = {time: "São Paulo"} -> Apenas o que eu quero do objeto.
+
+Pega um array, filtra com o filtro que desejar(filter()) e depois percorre com o map().  A arrow function está dentro do map.
+  {Array(items)
+          .fill()
+          .map((currentValue, index) => (
+            <SingleItem key={`${title}-${index}`} />
+          ))}
+
+Template string => Método para unir valores de variáveis ao invés do "valor1 + valor2". Forma: `${valor1}${valor2}` => Crase, depois cifrão, abre chaves, varíavel, fecha chaves, fecha crase. Pode colocar qualquer símbolo entre as variáveis, caso queira.
+
+Spread operator => ... => Cria uma cópia dos valores do array ou objeto
+  Ao fazer const newObj = obj, a igualdade não está copiando os valores de obj e sim o endereço de obj. Estão apontando para a mesma referência. O spread operator ... const newObj = {...obj} copia os valores de obj e não a referência
+
+variavel ? variavel : "variável" => Quando no if se quer retornar o mesmo valor da variável da pergunta, usa-se esse conceito: variavel ?? "Variável. Se variavel existir, retorne-a. Se não, o valor é null ou undefined e retorna qualquer outra coisa a critério do programador.
+
+Quando os componentes de re-renderizam?
+  Uma das ocasiões é quando uma variável de estado usada por esse componente é atualizada.
+  Hook
+    useState.
+
+Em CSS, "--_" significa variável local dentro da classe  . Já "--" significa variável global
+
+A instrução '--watch' em 'node ./server.js' reinicia toda vez que o arquivo é alterado. Ao invés de usar apenas 'node ./arquivo.js', onde seria necessário reiniciar manualmente a cada mudança no arquivo, usando 'node --watch ./server.js', o reinício é automático.
+
+ENDPOINT - Rota que pode ser acessada dentro uma API.
+  Uma interface de programação de aplicativos (API) é a forma pela qual um aplicativo solicita um serviço de outro aplicativo. As APIs permitem que os desenvolvedores evitem recriar recursos de aplicativos que já existem. Um endpoint da API é o local em que essas solicitações (conhecidas como chamadas de API) são atendidas.
+  Se a Alice e o Bob estão conversando pelo telefone, as palavras da Alice se deslocam até o Bob e vice-versa. A Alice direciona suas palavras para o "endpoint" da conversa: o Bob.
+  Alice: "Olá, Bob" ----------> Bob
+  Da mesma forma, a integração de uma API é como uma conversa. Só que em vez de dizer "Olá", uma API diz algo como "Preciso de alguns dados" para o servidor da API, fazendo uma chamada de API. O endpoint do servidor da API então responde "Aqui estão os dados" — uma resposta da API. E os endpoints da API não são entidades físicas como a Alice e o Bob: eles existem no software, não no hardware.
